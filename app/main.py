@@ -33,7 +33,7 @@ class Dictionary:
         raise KeyError(key)
 
     def __len__(self) -> int:
-        return len(self.dictionary)
+        return self.amount_of_node
 
     def add_node(self) -> None:
         index = self.node.hash_value % len(self.dictionary)
